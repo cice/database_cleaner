@@ -15,6 +15,7 @@ Here is an overview of the strategies supported for each library:
 | CouchPotato  | **Yes**        | No              | No             |
 | MongoMapper  | **Yes**        | No              | No             |
 | Mongoid      | **Yes**        | No              | No             |
+| Neo4j        | No             | No              | Yes            |
 
 (Default strategy for each library is denoted in bold)
 

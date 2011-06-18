@@ -88,6 +88,8 @@ module DatabaseCleaner
           DatabaseCleaner::CouchPotato
         when :sequel
           DatabaseCleaner::Sequel
+        when :neo4j
+          DatabaseCleaner::Neo4j
       end
     end
   end

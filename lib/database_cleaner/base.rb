@@ -120,8 +120,10 @@ module DatabaseCleaner
           :couch_potato
         elsif defined? ::Sequel
           :sequel
+        elsif defined? ::Neo4j
+          :neo4j
         else
-          raise NoORMDetected, "No known ORM was detected!  Is ActiveRecord, DataMapper, Sequel, MongoMapper, Mongoid, or CouchPotato loaded?"
+          raise NoORMDetected, "No known ORM was detected!  Is ActiveRecord, DataMapper, Sequel, MongoMapper, Mongoid, Neo4j or CouchPotato loaded?"
         end
       end
     end
